@@ -5,3 +5,7 @@ RUN stack install && strip /root/.local/bin/hastatic
 
 FROM abhin4v/haskell-scratch:integer-gmp
 COPY --from=builder /root/.local/bin/hastatic /usr/bin/hastatic
+
+WORKDIR /var/www
+ENV PORT 80
+ENTRYPOINT ["/usr/bin/hastatic"]

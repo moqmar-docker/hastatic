@@ -44,7 +44,7 @@ $ docker run -e TLS_CERT_FILE=certificate.pem -e TLS_KEY_FILE=key.pem -p 443:300
 
 The Docker image supports these environment variable for configuration:
 
-- PORT: the port to run the web server on, default: 3000
+- PORT: the port to run the web server on, default: 80
 - NF_FILE: name of the custom 404 file, default: `404.html`
 - IDX_FILE: name of the custom index files, default: `index.html`
 - TLS_CERT_FILE: TLS certification file, optional, required for HTTPS support
